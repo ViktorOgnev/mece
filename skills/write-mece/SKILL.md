@@ -1,49 +1,49 @@
 ---
 name: write-mece
-description: Write, rewrite, review, and structure texts using MECE consulting logic. Use when Codex needs to create or improve Russian or English business artifacts such as task descriptions, Jira-style issues, technical requirements, ТЗ, product or feature descriptions, executive summaries, decision memos, project notes, decompositions, work breakdowns, documentation, or stakeholder-facing explanations; especially when the user asks for MECE, mutually exclusive collectively exhaustive structure, consulting-style writing, Pyramid Principle, issue trees, clear decomposition, concise task wording, acceptance criteria, or structured documents.
+description: "Писать, переписывать, проверять и структурировать тексты по консалтинговой логике MECE. Использовать, когда Codex должен создать или улучшить деловой артефакт на русском языке: описание задачи, карточку в формате Jira, технические требования, ТЗ, описание продукта или возможности, резюме для руководителей, записку для решения, проектные заметки, декомпозицию, структуру работ, документацию или объяснение для заинтересованных сторон; особенно если пользователь просит MECE, взаимоисключающую и совместно исчерпывающую структуру, консалтинговый стиль, принцип пирамиды, дерево вопросов, ясную декомпозицию, краткую постановку задачи, критерии приемки или структурированный документ."
 ---
 
-# Write MECE
+# MECE-редактор
 
-## Core Workflow
+## Базовый процесс
 
-Use this sequence for every artifact unless the user asks only for a tiny edit:
+Используй эту последовательность для каждого артефакта, кроме совсем коротких правок:
 
-1. Define the governing question: what decision, task, or understanding must the reader get from the text?
-2. State the answer first: put the main conclusion, requested action, or target outcome before supporting detail.
-3. Choose one structure type: pyramid, issue tree, task card, requirements document, executive summary, decision memo, or work breakdown.
-4. Make the first-level branches MECE: use one classification criterion per level, remove overlaps, close gaps, and avoid vague buckets such as "other" unless the scope explicitly requires them.
-5. Write branches in parallel form: same abstraction level, same grammatical shape, comparable detail.
-6. Check the output against the source: preserve user wording, numbers, scope, stakeholder framing, constraints, and arithmetic chains unless the user asks to change them.
-7. Run a short quality gate before finalizing: answer-first, no duplicated points, no mixed levels, no hidden gaps, testable next steps where relevant.
+1. Определи главный вопрос: какое решение, действие или понимание должен получить читатель?
+2. Сформулируй ответ первым: поставь главный вывод, запрашиваемое действие или целевое состояние перед деталями.
+3. Выбери тип структуры: пирамида, дерево вопросов, карточка задачи, документ требований, резюме для руководителей, записка для решения или декомпозиция работ.
+4. Сделай ветки первого уровня MECE: используй один критерий деления на каждом уровне, убери пересечения, закрой пробелы и избегай расплывчатых корзин вроде "прочее", если граница этой корзины не задана явно.
+5. Пиши ветки параллельно: один уровень абстракции, одна грамматическая форма, сопоставимая детализация.
+6. Сверь результат с исходником: сохрани формулировки пользователя, числа, область работ, позицию заинтересованных сторон, ограничения и цепочки расчетов, если пользователь не просит их изменить.
+7. Перед финалом проведи короткую проверку качества: ответ в начале, нет повторов, нет смешения уровней, нет скрытых пробелов, для задач есть проверяемые следующие шаги.
 
-## Consulting Writing Rules
+## Правила консалтингового письма
 
-- Prefer conclusion-first text over chronological narration.
-- Build paragraphs and bullets as top-down pyramids: point first, evidence after.
-- Use SCQ when the artifact needs framing: Situation, Complication, Question, then Answer.
-- Use issue trees for decomposition: each tree answers exactly one "why", "how", or "what must be true" question.
-- Keep each level based on a single split criterion, such as actor, workflow stage, cause category, component, option, risk type, or metric driver.
-- Replace weak buckets with named categories. If a residual bucket is unavoidable, define its boundary explicitly.
-- Separate facts, assumptions, decisions, open questions, and next actions instead of mixing them in one list.
-- For stakeholder text, keep the user's tone and key phrases; improve structure without laundering away intent.
+- Предпочитай текст с выводом в начале хронологическому рассказу.
+- Строй абзацы и списки как пирамиду: сначала тезис, затем подтверждение.
+- Используй SCQ, когда артефакту нужен контекст: ситуация, осложнение, вопрос, ответ.
+- Используй деревья вопросов для декомпозиции: каждое дерево отвечает ровно на один вопрос типа "почему", "как" или "что должно быть верно".
+- На каждом уровне выбирай один критерий деления: роль, этап процесса, категория причины, компонент, вариант, тип риска или драйвер метрики.
+- Заменяй слабые корзины именованными категориями. Если остаточная корзина неизбежна, явно опиши ее границу.
+- Разделяй факты, предположения, решения, открытые вопросы и следующие действия, не смешивай их в одном списке.
+- В тексте для заинтересованных сторон сохраняй тон и ключевые фразы пользователя; улучшай структуру без потери исходного намерения.
 
-## Task And Requirement Rules
+## Правила задач и требований
 
-- For tasks, include outcome, context, in-scope work, out-of-scope boundaries, acceptance criteria, dependencies, risks or open questions, and next owner/action when known.
-- For product descriptions, separate user problem, target users, proposed behavior, value, constraints, and success signals.
-- For requirements, write observable behavior instead of vague intent. Prefer testable acceptance criteria.
-- Use Given-When-Then for interaction scenarios and EARS-style clauses for precise system requirements when useful.
-- Use INVEST as a backlog quality check: Independent, Negotiable, Valuable, Estimable, Small, Testable.
-- Use SMART as a task/action quality check: Specific, Measurable, Achievable, Relevant, Time-boxed.
+- Для задач включай результат, контекст, работы в области задачи, границы вне области задачи, критерии приемки, зависимости, риски или открытые вопросы, а также следующего владельца или действие, если они известны.
+- Для описаний продукта разделяй пользовательскую проблему, целевых пользователей, предлагаемое поведение, ценность, ограничения и сигналы успеха.
+- Для требований описывай наблюдаемое поведение вместо расплывчатого намерения. Предпочитай проверяемые критерии приемки.
+- Для сценариев взаимодействия используй формат "Дано-Когда-Тогда"; для точных системных требований при необходимости используй EARS-формулировки.
+- Используй INVEST как проверку качества задачи списка работ: независимость, обсуждаемость, ценность, оцениваемость, малый размер, проверяемость.
+- Используй SMART как проверку качества действия: конкретность, измеримость, достижимость, релевантность, ограничение по времени.
 
-## Working With Missing Context
+## Работа с недостающим контекстом
 
-- Ask only when missing information materially changes the artifact, such as target audience, decision to support, hard scope boundary, or required format.
-- If a reasonable default exists, proceed and state assumptions briefly.
-- Do not add invented facts, dates, metrics, owners, or commitments. Mark them as placeholders or open questions.
-- If the source material conflicts, preserve both sides and make the conflict explicit.
+- Задавай вопросы только тогда, когда отсутствующая информация существенно меняет артефакт: целевая аудитория, решение, жесткая граница области работ или обязательный формат.
+- Если есть разумное значение по умолчанию, продолжай работу и кратко укажи предположения.
+- Не выдумывай факты, даты, метрики, владельцев или обязательства. Помечай их как заполнители или открытые вопросы.
+- Если исходные материалы противоречат друг другу, сохрани обе стороны и явно покажи конфликт.
 
-## Resource Selection
+## Выбор справочника
 
-Read `references/artifact-patterns.md` when the user asks for a specific artifact type, a fuller template, a rewrite from rough notes, or a MECE review checklist.
+Читай `references/artifact-patterns.md`, когда пользователь просит конкретный тип артефакта, полный шаблон, переработку черновых заметок или проверку MECE.

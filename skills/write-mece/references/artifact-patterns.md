@@ -1,219 +1,219 @@
-# Artifact Patterns
+# Шаблоны артефактов
 
-Use these patterns as compact starting points. Adapt headings to the user's requested language, audience, and level of formality.
+Используй эти шаблоны как компактную основу. Адаптируй заголовки под язык пользователя, аудиторию и нужный уровень формальности.
 
-## MECE Quality Gate
+## Проверка MECE
 
-- Governing question: the text answers one clear reader question.
-- Answer-first: the first sentence or section gives the main point.
-- Mutually exclusive: sibling bullets do not repeat, overlap, or use different split criteria.
-- Collectively exhaustive: the structure covers the stated scope without hidden gaps.
-- Same level: sibling items have comparable abstraction and detail.
-- Parallel wording: headings and bullets use the same grammatical shape.
-- Source fidelity: numbers, scope, stakeholder wording, and constraints are preserved.
-- Actionability: tasks and requirements have observable acceptance criteria or next steps.
+- Главный вопрос: текст отвечает на один ясный вопрос читателя.
+- Ответ в начале: первое предложение или первый раздел дает главный вывод.
+- Взаимное исключение: соседние пункты не повторяются, не пересекаются и не используют разные критерии деления.
+- Совместная исчерпывающесть: структура закрывает заявленную область без скрытых пробелов.
+- Один уровень: соседние пункты сопоставимы по абстракции и детализации.
+- Параллельная форма: заголовки и пункты используют одинаковую грамматическую конструкцию.
+- Верность источнику: числа, область работ, формулировки заинтересованных сторон и ограничения сохранены.
+- Действенность: задачи и требования имеют наблюдаемые критерии приемки или следующие шаги.
 
-## Task Or Jira-Style Issue
+## Задача или карточка в формате Jira
 
 ```markdown
-# [Outcome-oriented title]
+# [Название через результат]
 
-## Goal
-[What must become true and why it matters.]
+## Цель
+[Что должно стать верным и почему это важно.]
 
-## Context
-[Facts, source request, business/user reason, links if provided.]
+## Контекст
+[Факты, исходный запрос, бизнес- или пользовательская причина, ссылки, если они есть.]
 
-## Scope
-- [In-scope work item 1]
-- [In-scope work item 2]
-- [In-scope work item 3]
+## В области задачи
+- [Работа 1]
+- [Работа 2]
+- [Работа 3]
 
-## Out Of Scope
-- [Explicit boundary 1]
-- [Explicit boundary 2]
+## Вне области задачи
+- [Явная граница 1]
+- [Явная граница 2]
 
-## Acceptance Criteria
-- [Observable result or behavior]
-- [Edge case or constraint]
-- [Verification method]
+## Критерии приемки
+- [Наблюдаемый результат или поведение]
+- [Граничный случай или ограничение]
+- [Способ проверки]
 
-## Dependencies
-- [People, systems, data, decisions, or blockers]
+## Зависимости
+- [Люди, системы, данные, решения или блокеры]
 
-## Open Questions
-- [Only questions that block implementation or acceptance]
+## Открытые вопросы
+- [Только вопросы, которые блокируют реализацию или приемку]
 ```
 
-Quality checks:
-- Title names the outcome, not only the activity.
-- Acceptance criteria are testable by inspection, command, demo, or metric.
-- Dependencies are not mixed with scope.
+Проверка качества:
+- Название описывает результат, а не только действие.
+- Критерии приемки проверяются осмотром, командой, демонстрацией или метрикой.
+- Зависимости не смешаны с областью задачи.
 
-## Feature Or Product Description
+## Описание продукта или возможности
 
 ```markdown
-# [Feature name]
+# [Название возможности]
 
-## Summary
-[Answer-first description of what changes for whom.]
+## Кратко
+[Описание в формате "ответ в начале": что меняется и для кого.]
 
-## User Problem
-[Target user, pain, current workaround, impact.]
+## Проблема пользователя
+[Целевой пользователь, боль, текущий обходной путь, влияние.]
 
-## Proposed Behavior
-- [User-visible behavior]
-- [System behavior]
-- [Admin/operator behavior if relevant]
+## Предлагаемое поведение
+- [Поведение, видимое пользователю]
+- [Поведение системы]
+- [Поведение администратора или оператора, если важно]
 
-## Value
-- User value: [specific benefit]
-- Business value: [specific benefit]
-- Operational value: [specific benefit, if relevant]
+## Ценность
+- Для пользователя: [конкретная польза]
+- Для бизнеса: [конкретная польза]
+- Для операций: [конкретная польза, если важно]
 
-## Constraints
-- [Technical, product, legal, pricing, timeline, or rollout constraint]
+## Ограничения
+- [Техническое, продуктовое, юридическое, тарифное, временное или релизное ограничение]
 
-## Success Signals
-- [Metric or qualitative signal]
-- [Guardrail or balancing signal]
+## Сигналы успеха
+- [Метрика или качественный сигнал]
+- [Защитная или балансирующая метрика]
 ```
 
-Quality checks:
-- Do not mix problem, solution, and success metric in one paragraph.
-- Keep user groups mutually exclusive when listing audiences.
-- Preserve explicit non-goals.
+Проверка качества:
+- Не смешивай проблему, решение и метрику успеха в одном абзаце.
+- Если перечисляешь аудитории, делай группы пользователей взаимоисключающими.
+- Сохраняй явно заданные нецели.
 
-## Technical Requirements Or TZ
+## Технические требования или ТЗ
 
 ```markdown
-# [Document title]
+# [Название документа]
 
-## Objective
-[Decision or implementation outcome this document enables.]
+## Цель
+[Решение или результат реализации, ради которого нужен документ.]
 
-## Current State
-[Relevant current behavior, data, process, or limitation.]
+## Текущее состояние
+[Релевантное текущее поведение, данные, процесс или ограничение.]
 
-## Target State
-[Desired behavior and boundaries.]
+## Целевое состояние
+[Желаемое поведение и границы.]
 
-## Functional Requirements
-- [The system/user can...]
-- [The system/user can...]
+## Функциональные требования
+- [Система или пользователь может...]
+- [Система или пользователь может...]
 
-## Non-Functional Requirements
-- Performance: [requirement or open question]
-- Reliability: [requirement or open question]
-- Security/privacy: [requirement or open question]
-- Observability/support: [requirement or open question]
+## Нефункциональные требования
+- Производительность: [требование или открытый вопрос]
+- Надежность: [требование или открытый вопрос]
+- Безопасность и приватность: [требование или открытый вопрос]
+- Наблюдаемость и поддержка: [требование или открытый вопрос]
 
-## Acceptance Criteria
-- Given [context], when [action/event], then [observable result].
-- While [state], when [trigger], the system shall [required response].
+## Критерии приемки
+- Дано [контекст], когда [действие или событие], тогда [наблюдаемый результат].
+- Пока [состояние], когда [триггер], система должна [обязательная реакция].
 
-## Risks And Dependencies
-- [Risk/dependency and impact]
+## Риски и зависимости
+- [Риск или зависимость и влияние]
 
-## Open Questions
-- [Question and why it matters]
+## Открытые вопросы
+- [Вопрос и почему он важен]
 ```
 
-Quality checks:
-- Functional and non-functional requirements are separate.
-- Requirements describe observable behavior.
-- Acceptance criteria can be verified without interpreting intent.
+Проверка качества:
+- Функциональные и нефункциональные требования разделены.
+- Требования описывают наблюдаемое поведение.
+- Критерии приемки можно проверить без толкования намерения.
 
-## Executive Summary
+## Резюме для руководителей
 
 ```markdown
-# [Topic]
+# [Тема]
 
-## Bottom Line
-[One to three sentences with the conclusion, recommendation, or status.]
+## Главный вывод
+[Одно-три предложения с выводом, рекомендацией или статусом.]
 
-## Why It Matters
-- [Impact 1]
-- [Impact 2]
-- [Impact 3]
+## Почему это важно
+- [Влияние 1]
+- [Влияние 2]
+- [Влияние 3]
 
-## Evidence
-- [Fact, number, example, or source]
-- [Fact, number, example, or source]
+## Подтверждения
+- [Факт, число, пример или источник]
+- [Факт, число, пример или источник]
 
-## Decision Or Ask
-[What the reader should approve, decide, do, or understand next.]
+## Решение или запрос
+[Что читатель должен согласовать, решить, сделать или понять дальше.]
 
-## Caveats
-- [Material uncertainty, dependency, or limitation]
+## Оговорки
+- [Существенная неопределенность, зависимость или ограничение]
 ```
 
-Quality checks:
-- Put recommendation before analysis.
-- Keep caveats material; do not dilute the answer with minor disclaimers.
-- Separate evidence from interpretation.
+Проверка качества:
+- Ставь рекомендацию перед анализом.
+- Оставляй только существенные оговорки; не размывай вывод мелкими дисклеймерами.
+- Отделяй подтверждения от интерпретации.
 
-## Issue Tree Or Decomposition
+## Дерево вопросов или декомпозиция
 
 ```markdown
-# Governing Question
-[What must be explained or solved?]
+# Главный вопрос
+[Что нужно объяснить или решить?]
 
-## Branch 1: [Criterion-consistent category]
-- [Sub-issue]
-- [Sub-issue]
+## Ветка 1: [Категория с единым критерием деления]
+- [Подвопрос]
+- [Подвопрос]
 
-## Branch 2: [Criterion-consistent category]
-- [Sub-issue]
-- [Sub-issue]
+## Ветка 2: [Категория с единым критерием деления]
+- [Подвопрос]
+- [Подвопрос]
 
-## Branch 3: [Criterion-consistent category]
-- [Sub-issue]
-- [Sub-issue]
+## Ветка 3: [Категория с единым критерием деления]
+- [Подвопрос]
+- [Подвопрос]
 ```
 
-Quality checks:
-- Every branch answers the same question type.
-- Each level uses one split criterion.
-- Branch labels are explanatory, not generic buckets.
-- Stop decomposing when items are actionable or testable.
+Проверка качества:
+- Каждая ветка отвечает на один и тот же тип вопроса.
+- На каждом уровне используется один критерий деления.
+- Названия веток объясняют смысл, а не служат общими корзинами.
+- Останавливай декомпозицию, когда элементы становятся выполнимыми или проверяемыми.
 
-## Decision Memo Or Options Analysis
+## Записка для решения или анализ вариантов
 
 ```markdown
-# Decision: [Decision to make]
+# Решение: [Какое решение нужно принять]
 
-## Recommendation
-[Chosen option and reason.]
+## Рекомендация
+[Выбранный вариант и причина.]
 
-## Decision Criteria
-- [Criterion 1]
-- [Criterion 2]
-- [Criterion 3]
+## Критерии решения
+- [Критерий 1]
+- [Критерий 2]
+- [Критерий 3]
 
-## Options
-| Option | Fit To Criteria | Upside | Risk | Effort |
+## Варианты
+| Вариант | Соответствие критериям | Плюс | Риск | Трудоемкость |
 | --- | --- | --- | --- | --- |
-| [A] | [Assessment] | [Upside] | [Risk] | [Effort] |
-| [B] | [Assessment] | [Upside] | [Risk] | [Effort] |
-| [C] | [Assessment] | [Upside] | [Risk] | [Effort] |
+| [А] | [Оценка] | [Плюс] | [Риск] | [Трудоемкость] |
+| [Б] | [Оценка] | [Плюс] | [Риск] | [Трудоемкость] |
+| [В] | [Оценка] | [Плюс] | [Риск] | [Трудоемкость] |
 
-## Rationale
-[Why the recommendation wins against the stated criteria.]
+## Обоснование
+[Почему рекомендация выигрывает по заданным критериям.]
 
-## Next Steps
-- [Action, owner if known, timing if known]
+## Следующие шаги
+- [Действие, владелец, если известен, срок, если известен]
 ```
 
-Quality checks:
-- Criteria are defined before options are judged.
-- Options are genuinely distinct.
-- Recommendation is not hidden after the comparison.
+Проверка качества:
+- Критерии определены до оценки вариантов.
+- Варианты действительно отличаются друг от друга.
+- Рекомендация не спрятана после сравнения.
 
-## Source-Backed Practice Notes
+## Практики с источниками
 
-- Pyramid Principle: use a top-down answer, supporting groups, and reader-question logic. Reference: https://www.barbaraminto.com/
-- Inverted pyramid: put the most important information first for faster scanning. Reference: https://www.nngroup.com/articles/inverted-pyramid/
-- User stories and acceptance criteria: use story conversations and conditions of satisfaction. Reference: https://www.atlassian.com/agile/project-management/user-stories
-- INVEST and SMART: use as quality checks for backlog stories and tasks. Reference: https://xp123.com/articles/invest-in-good-stories-and-smart-tasks/
-- EARS: use constrained requirement syntax when precision matters. Reference: https://alistairmavin.com/ears/
+- Принцип пирамиды: используй ответ сверху, поддерживающие группы и логику вопроса читателя. Источник: https://www.barbaraminto.com/
+- Перевернутая пирамида: ставь самую важную информацию первой, чтобы текст быстрее сканировался. Источник: https://www.nngroup.com/articles/inverted-pyramid/
+- Пользовательские истории и критерии приемки: используй обсуждение истории и условия удовлетворения. Источник: https://www.atlassian.com/agile/project-management/user-stories
+- INVEST и SMART: используй как проверки качества задач списка работ и действий. Источник: https://xp123.com/articles/invest-in-good-stories-and-smart-tasks/
+- EARS: используй ограниченный синтаксис требований, когда нужна точность. Источник: https://alistairmavin.com/ears/
