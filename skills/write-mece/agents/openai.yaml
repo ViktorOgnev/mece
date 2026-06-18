@@ -1,0 +1,4 @@
+interface:
+  display_name: "MECE Writer"
+  short_description: "Структурные тексты в MECE-логике"
+  default_prompt: "Используй $write-mece, чтобы превратить черновик в структурное описание задачи по MECE."
